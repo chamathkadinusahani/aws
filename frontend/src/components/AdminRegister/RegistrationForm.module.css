@@ -1,0 +1,107 @@
+.registrationForm {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.formTitle {
+  color: #000;
+  align-self: center;
+  font-size: 36px;
+}
+
+.userTypeSelector {
+  display: flex;
+  margin-top: 36px;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.1px;
+  font: 500 14px/20px Roboto, sans-serif;
+}
+
+.userTypeButton {
+  display: flex;
+  min-height: 62px;
+  justify-content: center;
+  flex: 1;
+  padding: 4px 0;
+  background-color: #e8def8;
+  border: 1px solid #79747e;
+  color: #000;
+  cursor: pointer;
+}
+
+.userTypeButton:first-child {
+  border-radius: 100px 0 0 100px;
+}
+
+.userTypeButton:last-child {
+  border-radius: 0 100px 100px 0;
+}
+
+.userTypeButton.active {
+  background-color: rgba(20, 12, 115, 1);
+  color: #fff;
+}
+
+.inputGroup {
+  display: flex;
+  margin-top: 21px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.inputLabel {
+  align-self: start;
+  color: #252a31;
+  padding: 0 2px;
+  font-size: 24px;
+}
+
+.inputField {
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid #bac7d5;
+  background-color: #e8edf1;
+  display: flex;
+  margin-top: 4px;
+  width: 95%;
+  gap: var(--sds-size-space-200);
+  overflow: hidden;
+  padding: 12px;
+}
+
+.submitButton {
+  border-radius: 6px;
+  background-color: rgba(20, 12, 115, 1);
+  min-height: 49px;
+  color: #fff;
+  text-align: center;
+  padding: 15px 16px;
+  font: 700 32px/1 'Abhaya Libre', sans-serif;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+  .registrationForm {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .userTypeSelector {
+    max-width: 100%;
+    white-space: initial;
+  }
+
+  .inputGroup {
+    margin: 21px 3px 0 4px;
+  }
+
+  .submitButton {
+    margin: 20px 4px 0 3px;
+  }
+}

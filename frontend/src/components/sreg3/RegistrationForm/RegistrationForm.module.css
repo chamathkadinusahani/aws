@@ -1,0 +1,135 @@
+/* Add styling for the container */
+.formContainer {
+  background-color: #f9f9f9; /* Set background color */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 8px; /* Add rounded corners */
+  padding: 20px; /* Add padding */
+  max-width: 400px; /* Set max width */
+  height: 490px;
+  margin: 0 auto; /* Center the container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  margin-top: 12px;
+  margin-bottom: -1px;
+}
+
+.registrationForm {
+  display: flex;
+  width: 200%; /* Adjust to fit the container */
+  flex-direction: column;
+  margin-top: -40px;
+}
+
+/* Other existing styles */
+
+
+.registrationForm {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  
+  
+}
+
+.formTitle {
+  color: #000;
+  align-self: center;
+  font-size: 32px;
+  margin-bottom: 0px;
+}
+
+.userTypeSelector {
+  display: flex;
+  margin-top: 36px;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.1px;
+  font-size: 14px;
+}
+
+.userTypeButton {
+  display: flex;
+  min-height: 62px;
+  justify-content: center;
+  flex: 1;
+  padding: 4px 0;
+  background-color: #e8def8;
+  border: 1px solid #79747e;
+  color: #000;
+  cursor: pointer;
+}
+
+.userTypeButton:first-child {
+  border-radius: 100px 0 0 100px;
+}
+
+.userTypeButton:last-child {
+  border-radius: 0 100px 100px 0;
+}
+
+.userTypeButton.active {
+  background-color: rgba(20, 12, 115, 1);
+  color: #fff;
+}
+
+.inputGroup {
+  display: flex;
+  margin-top: 21px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.inputLabel {
+  align-self: start;
+  color: #252a31;
+  padding: 0 2px;
+  font-size: 14px;
+}
+
+.inputField {
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid #bac7d5;
+  background-color: #e8edf1;
+  display: flex;
+  margin-top: 4px;
+  width: 95%;
+  gap: var(--sds-size-space-200);
+  overflow: hidden;
+  padding: 12px;
+  
+}
+
+.submitButton {
+  border-radius: 6px;
+  background-color: rgba(20, 12, 115, 1);
+  min-height: 40px;
+  color: #fff;
+  text-align: center;
+  padding: 6px 2px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  margin-top: 34px;
+  margin-bottom: 10px;
+  
+}
+
+@media (max-width: 991px) {
+  .registrationForm {
+    max-width: 100%;
+    margin-top : 40px;
+  }
+
+  .userTypeSelector {
+    max-width: 100%;
+    white-space: initial;
+  }
+
+  .inputGroup {
+    margin: 21px 3px 0 4px;
+  }
+
+  .submitButton {
+    margin: 20px 4px 0 3px;
+  }
+}

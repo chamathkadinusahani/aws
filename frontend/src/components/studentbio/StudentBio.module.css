@@ -1,0 +1,291 @@
+.studentsBioPersonal {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #cdc1d6;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 0 20px;
+  }
+}
+
+.schoolInfo {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.schoolLogo {
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.schoolName {
+  color: #000;
+  font: 400 36px/1 Inter, sans-serif;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactButton {
+  border-radius: 10px;
+  background-color: rgba(20, 12, 115, 0.96);
+  color: #fff;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .contactButton {
+    padding: 0 20px;
+  }
+}
+
+.phoneWrapper {
+  display: flex;
+  margin-top: 12px;
+  gap: 17px;
+  align-items: center;
+}
+
+.phoneIcon {
+  width: 33px;
+  height: 30px;
+}
+
+.phoneNumber {
+  color: #000;
+  font-size: 16px;
+}
+
+.mainContent {
+  align-self: center;
+  display: flex;
+  margin-top: 48px;
+  width: 100%;
+  max-width: 1125px;
+  flex-direction: column;
+}
+
+@media (max-width: 991px) {
+  .mainContent {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.navigation {
+  position: relative;
+}
+
+.navList {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+  justify-content: start;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navItem {
+  flex: 1;
+  min-width: 80px;
+}
+
+.navLink {
+  display: block;
+  border-radius: 8px;
+  padding: 8px;
+  border: 1px solid #6250a7;
+  color: #160041;
+  text-decoration: none;
+  font: 400 24px/1 Inter, sans-serif;
+  text-align: center;
+}
+
+.activeIndicator {
+  position: absolute;
+  bottom: -3px;
+  left: 457px;
+  width: 210px;
+  height: 5px;
+  background-color: #89d0f8;
+  border-radius: 20px;
+}
+
+.studentInfo {
+  border-radius: 12px;
+  background-color: rgba(212, 210, 246, 0.98);
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.15);
+  display: flex;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  width: 100%;
+  flex-direction: column;
+  padding: 0 40px 124px 40px;
+}
+
+@media (max-width: 991px) {
+  .studentInfo {
+    max-width: 100%;
+    margin-top: 40px;
+    padding: 0 0 100px 20px;
+  }
+}
+
+.studentHeader {
+  display: flex;
+  gap: 20px;
+  margin-top: 68px;
+}
+
+@media (max-width: 991px) {
+  .studentHeader {
+    margin-top: 40px;
+  }
+}
+
+.studentPhotoWrapper {
+  position: relative;
+  width: 173px;
+  height: 173px;
+}
+
+.studentPhoto {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.editIcon {
+  position: absolute;
+  bottom: 6px;
+  right: 28px;
+  width: 24px;
+  height: 24px;
+}
+
+.studentNameId {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.studentName {
+  color: #160041;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.studentId {
+  color: #000;
+  font-size: 18px;
+  margin: 13px 0 0;
+}
+
+.studentDetails {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-top: 64px;
+}
+
+@media (max-width: 991px) {
+  .studentDetails {
+    flex-direction: column;
+  }
+}
+
+.detailColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-right:128px;
+}
+
+.detailGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detailGroup label {
+  color: #000;
+  font-size: 16px;
+}
+
+.detailInput {
+  background-color: #fff;
+  border: none;
+  padding: 14px 20px;
+  font-size: 18px;
+  width: 100%;
+}
+
+.dateWrapper {
+  position: relative;
+}
+
+.calendarIcon {
+  position: absolute;
+  right: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+}
+
+.studentBadge {
+  width: 32px;
+  height: 32px;
+  align-self: flex-end;
+  margin-top: 48px;
+}
+
+.footer {
+  background-image: url('https://cdn.builder.io/api/v1/image/assets/TEMP/49ae182f2adbd5277e18627ae0bc1a9ec70b4a67fb9ab98d89b72c2d4c138f7f?placeholderIfAbsent=true&apiKey=540abe8e50444d9db0d29b519fdb50e8');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 31px 64px;
+}
+
+@media (max-width: 991px) {
+  .footer {
+    padding: 0 20px;
+  }
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.schoolLogo {
+  width: 227px;
+  height: 227px;
+  background-color: #d9d9
+}

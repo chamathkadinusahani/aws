@@ -1,0 +1,99 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 40px;
+    background-color:rgba(205, 193, 214, 1); 
+    flex-wrap: wrap; 
+  }
+
+  .span{
+    font-size:2rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;            
+  }
+  
+  .navbar-logo img {
+    width: 80px;
+    margin-right: 10px;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 95px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: rgba(20, 12, 115, 0.96);
+    position: relative;
+    top:70px;
+    font-weight: bolder;
+    text-align: center;
+    
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-right {
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: flex-end;  /* Align the items to the right */
+  }
+  
+  .contact-btn {
+    background-color: #20166e; /* Dark blue background */
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Add space between the button and the contact info */
+  }
+  
+  .contact-btn:hover {
+    background-color: #02010e; /* Slightly darker blue on hover */
+  }
+  
+  .contact-info {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .phone-icon {
+    margin-right: 5px;
+    background-image: url('/public/R-removebg-preview.png');
+    width: 46px;
+    height: 46px;
+    background-size: contain;
+  }
+  
+  
+  /* Media queries */
+  @media (max-width: 768px) {
+    .navbar-links {
+
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+  
+    .navbar-contact {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+  }
+  

@@ -1,0 +1,117 @@
+.footer {
+  background-image: url('https://cdn.builder.io/api/v1/image/assets/TEMP/0052b51e86b3f95416e210dc9aae4b6282655bd638403f6702d8ff00999a15e0?placeholderIfAbsent=true&apiKey=170b590e187e4beabe3f2ef7100234b5');
+  color: white;
+  padding: 0px 20px;
+  text-align: center;
+  margin-top: -53px;
+}
+
+
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2px;
+  margin-bottom: -11px;
+}
+
+.footer-logo img {
+  width: 90px;
+  margin-left: 10px;
+  margin-top: 1px;
+  margin-bottom: 10px;
+}
+
+.footer-contact-info {
+  text-align: left;
+  font-size: 11.5px;
+}
+
+/* Make 'Directions' and 'Contact' link bold */
+.footer-contact-info a[href="#directions"],
+.footer-contact-info a[href="#contact"] {
+  font-weight: bold;
+  font-size: 11.5px;
+}
+
+.footer-links a,
+.footer-quick-links a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+  display: block;
+  text-align: left;
+  font-size: 11.5px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  padding: 0px 0;
+  font-size: 10.5px;
+}
+
+/* Ensure footer columns stack on smaller screens */
+.footer-left {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.footer-right {
+  text-align: right;
+  margin-right: 10px;
+}
+
+/* Responsive styles for smaller devices */
+@media (max-width: 768px) {
+  .footer-logo img {
+    width: 150px;
+    margin-left: 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-left,
+  .footer-right {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 15px;
+    font-size: 10px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-logo img {
+    width: 50px;
+  }
+
+  .footer-contact-info {
+    text-align: center;
+    
+  }
+
+  .footer-bottom {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .footer-left,
+  .footer-right {
+    text-align: center;
+    margin-bottom: 5px;
+    
+  }
+}

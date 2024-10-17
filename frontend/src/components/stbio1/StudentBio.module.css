@@ -1,0 +1,783 @@
+input{
+  color: #000;
+}
+
+.studentsBioPersonal {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #cdc1d6;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 0 20px;
+  }
+}
+
+.schoolInfo {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.schoolLogo {
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.schoolName {
+  color: #000;
+  font: 400 36px/1 Inter, sans-serif;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactButton {
+  border-radius: 10px;
+  background-color: rgba(20, 12, 115, 0.96);
+  color: #fff;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .contactButton {
+    padding: 0 20px;
+  }
+}
+
+.phoneWrapper {
+  display: flex;
+  margin-top: 12px;
+  gap: 17px;
+  align-items: center;
+}
+
+.phoneIcon {
+  width: 33px;
+  height: 30px;
+}
+
+.phoneNumber {
+  color: #000;
+  font-size: 16px;
+}
+
+.mainContent {
+  align-self: center;
+  display: flex;
+  margin-top: 48px;
+  width: 100%;
+  max-width: 1125px;
+  flex-direction: column;
+}
+
+@media (max-width: 991px) {
+  .mainContent {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.navigation {
+  position: relative;
+}
+
+.navList {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+  justify-content: start;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navItem {
+  flex: 1;
+  min-width: 80px;
+}
+
+.navLink {
+  display: block;
+  border-radius: 8px;
+  padding: 8px;
+  border: 1px solid #6250a7;
+  color: #160041;
+  text-decoration: none;
+  font: 400 24px/1 Inter, sans-serif;
+  text-align: center;
+}
+
+.activeIndicator {
+  position: absolute;
+  bottom: -3px;
+  left: 457px;
+  width: 210px;
+  height: 5px;
+  background-color: #89d0f8;
+  border-radius: 20px;
+}
+
+/* Wrapper for the tab navigation */
+.tabNav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Style for each tab button */
+.tabNav button {
+  background-color: #fff;
+  /* Unselected tab color */
+  border: 1px solid #ddd;
+  color: #140C73;
+  /* Text color */
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect on unselected tabs */
+.tabNav button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Style for the active (selected) tab */
+.tabNav button.activeTab {
+  background-color: #140C73;
+  /* Selected tab color */
+  color: #fff;
+  /* Text color for selected tab */
+  border: 1px solid #140C73;
+}
+
+
+.studentInfo {
+  border-radius: 12px;
+  background-color: rgba(212, 210, 246, 0.98);
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.15);
+  display: flex;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  width: 100%;
+  flex-direction: column;
+  padding: 0 40px 124px 40px;
+}
+
+@media (max-width: 991px) {
+  .studentInfo {
+    max-width: 100%;
+    margin-top: 40px;
+    padding: 0 0 100px 20px;
+  }
+}
+
+.studentHeader {
+  display: flex;
+  gap: 20px;
+  margin-top: 68px;
+}
+
+@media (max-width: 991px) {
+  .studentHeader {
+    margin-top: 40px;
+  }
+}
+
+.studentPhotoWrapper {
+  position: relative;
+  width: 173px;
+  height: 173px;
+}
+
+.studentPhoto {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.editIcon {
+  position: absolute;
+  bottom: 6px;
+  right: 28px;
+  width: 24px;
+  height: 24px;
+}
+
+.studentNameId {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.studentName {
+  color: #160041;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.studentId {
+  color: #000;
+  font-size: 18px;
+  margin: 13px 0 0;
+}
+
+.studentDetails {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-top: 64px;
+}
+
+@media (max-width: 991px) {
+  .studentDetails {
+    flex-direction: column;
+  }
+}
+
+.detailColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-right: 128px;
+}
+
+.detailGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detailGroup label {
+  color: #000;
+  font-size: 16px;
+}
+
+.detailInput {
+  background-color: #fff;
+  border: none;
+  padding: 14px 20px;
+  font-size: 18px;
+  width: 100%;
+}
+
+.dateWrapper {
+  position: relative;
+}
+
+.calendarIcon {
+  position: absolute;
+  right: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+}
+
+.studentBadge {
+  width: 32px;
+  height: 32px;
+  align-self: flex-end;
+  margin-top: 48px;
+}
+
+.footer {
+  background-image: url('https://cdn.builder.io/api/v1/image/assets/TEMP/49ae182f2adbd5277e18627ae0bc1a9ec70b4a67fb9ab98d89b72c2d4c138f7f?placeholderIfAbsent=true&apiKey=540abe8e50444d9db0d29b519fdb50e8');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 31px 64px;
+}
+
+@media (max-width: 991px) {
+  .footer {
+    padding: 0 20px;
+  }
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.schoolLogo {
+  width: 227px;
+  height: 227px;
+  background-color: #d9d9
+}
+
+.studentsBioAcademic {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.academicInfo {
+  width: 100%;
+  max-width: 1125px;
+  margin-top: 57px;
+  background-color: rgba(212, 210, 246, 0.98);
+  border-radius: 12px;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.15);
+  padding-bottom: 66px;
+}
+
+.infoTabs {
+  display: flex;
+  width: 100%;
+}
+
+.tabButton {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.activeTab {
+  background-color: rgba(20, 12, 115, 0.96);
+  color: #fff;
+}
+
+.infoContent {
+  padding: 30px;
+}
+
+.gradeInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.gradeInfo > div {
+  flex: 1;
+  padding: 0 10px; 
+}
+
+.gradeInfo > div:first-child {
+  flex: 20%; 
+}
+
+.gradeInfo > div:last-child {
+  flex: 80%; 
+}
+
+.grade, .teacher {
+  background-color: #fff;
+  padding: 14px;
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+.subjectsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.subjectsTable th, .subjectsTable td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.attendance {
+  width: 100%;
+  max-width: 643px;
+  margin-top: 25px;
+}
+
+.attendanceContent {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 25px 2px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+}
+
+.attendanceChart {
+  width: 50%;
+}
+
+.chartContainer {
+  .chartContainer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+}
+
+.presentPercentage, .absentPercentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #fff;
+}
+
+.presentPercentage {
+  transform: translate(-50%, -100%);
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.presentColor, .absentColor {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.presentColor {
+  background-color: #c5c84f;
+}
+
+.absentColor {
+  background-color: #ff0000;
+}
+
+.attendanceStatus {
+  width: 45%;
+}
+
+.statusBox {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.25);
+  padding: 19px 23px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.statusGood {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 14px;
+}
+
+.statusIndicator {
+  width: 17px;
+  height: 17px;
+  background-color: #c5c84f;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.statusLegend {
+  font-size: 12px;
+  line-height: 1.5;
+  padding-left: 20px;
+}
+
+.chartContainer {
+  position: relative;
+  width: 200px; /* Adjust the size of the chart */
+  height: 200px;
+  margin: 0 auto;
+}
+
+.chartOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.presentPercentage, .absentPercentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #fff;
+}
+
+.presentPercentage {
+  transform: translate(-50%, -100%);
+}
+
+.academicInfo {
+  width: 100%;
+  max-width: 1125px;
+  margin-top: 57px;
+  background-color: rgba(212, 210, 246, 0.98);
+  border-radius: 12px;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.15);
+  padding-bottom: 66px;
+}
+
+.gradeInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.grade, .teacher {
+  background-color: #fff;
+  padding: 14px;
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+.subjectsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #fff; /* Table background color */
+  border: 1px solid #ddd; /* Table border color */
+  border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.subjectsTable th, .subjectsTable td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.subjectsTable thead th {
+  background-color: #f4f4f4; /* Optional: Header background color */
+  font-weight: bold;
+}
+
+.subjectsTable tbody tr:last-child td {
+  border-bottom: none; /* Remove bottom border for the last row */
+}
+
+.examResults {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #1a73e8; /* Button background color */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.tableContainer {
+  position: relative;
+}
+
+.examResults {
+  position: absolute;
+  bottom: -10;
+  left: 94%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  width: 120px;
+}
+
+
+.examResults {
+  background-color: rgba(20, 12, 115, 0.96);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.attendance {
+  .attendance {
+  width: 100%;
+  max-width: 643px;
+  margin-top: 25px;
+}
+
+.attendanceContent {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 25px 2px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+}
+
+.attendanceChart {
+  width: 50%;
+}
+
+.chartContainer {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  margin-top: 16px;
+}
+
+.chartImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.presentPercentage, .absentPercentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #fff;
+}
+
+.presentPercentage {
+  transform: translate(-50%, -100%);
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.presentColor, .absentColor {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.presentColor {
+  background-color: #c5c84f;
+}
+
+.absentColor {
+  background-color: #ff0000;
+}
+
+.attendanceStatus {
+  width: 45%;
+}
+
+.statusBox {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.25);
+  padding: 19px 23px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.statusGood {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 14px;
+}
+
+.statusIndicator {
+  width: 17px;
+  height: 17px;
+  background-color: #c5c84f;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.statusLegend {
+  font-size: 12px;
+  line-height: 1.5;
+  padding-left: 20px;
+}
+}
+
+.sectionTitle {
+  font: 400 20px/1 Inter, sans-serif;
+  margin-bottom: 28px;
+}
+
+.activitiesContainer {
+  display: flex;
+  gap: 20px;
+  border: 2px solid #79747e;
+  border-radius: 8px;
+  padding: 9px 17px 48px;
+  background-color: #fff;
+}
+
+.activities,
+.roles,
+.achievements {
+  flex: 1;
+}
+
+.subSectionTitle {
+  font: 400 18px/1 Inter, sans-serif;
+  margin: 32px 0 10px;
+}
+
+.medicalInfo {
+  background-color: #fff;
+  height: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

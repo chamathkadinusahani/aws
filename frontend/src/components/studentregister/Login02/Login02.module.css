@@ -1,0 +1,36 @@
+.login02 {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mainContent {
+  width: 100%;
+  max-width: 1282px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contentWrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.schoolImage {
+  aspect-ratio: 1.02;
+  object-fit: contain;
+  width: 60%;
+}
+
+@media (max-width: 991px) {
+  .contentWrapper {
+    flex-direction: column;
+  }
+
+  .schoolImage {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}

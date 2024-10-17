@@ -1,0 +1,50 @@
+/* Base Styles */
+.events-section {
+  padding: 0 20px;
+  width: 100%;
+  position: relative;
+  top: -50px;
+  
+ 
+  
+}
+
+.events-section h2 {
+  color: rgba(22, 0, 65, 1);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Adjust font size for larger screens */
+@media (min-width: 768px) {
+  .events-section h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.event-item {
+  position: relative;
+  width: 100%;
+  padding-top: 500px; /* Aspect ratio 16:9 for the images */
+  overflow: hidden;
+}
+
+.event-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width:2000px;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 480px) {
+  .events-section h2 {
+    font-size: 1.8rem;
+    margin-top: -1.5rem;
+  }
+}

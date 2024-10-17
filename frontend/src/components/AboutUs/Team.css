@@ -1,0 +1,16 @@
+.team {
+  padding: 40px;
+  text-align: center;
+  background-color: hwb(253 47% 5%);
+}
+
+.team h2 {
+  font-size: 32px;
+}
+
+.team p {
+  font-size: 18px;
+  width: 100%;
+  margin: 20px auto;
+}
+

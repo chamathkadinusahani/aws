@@ -1,0 +1,54 @@
+/* Navigation.module.css */
+.navigation {
+  padding-left: 600px;
+  display: flex;
+  width: 200%;
+  max-width: 500px;
+  align-items: center;
+  gap: 20px;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  transition: left 0.5s ease-in-out;
+}
+
+.navItem {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #6250a7;
+  border-radius: 8px;
+  color: #160041;
+  font-family: var(--sds-typography-body-font-family);
+  font-weight: var(--sds-typography-body-font-weight-regular);
+  padding: 1px;
+  border: 1px solid #cdc1d6;
+  background: none;
+  cursor: pointer;
+  flex: 1;
+  min-width: 8px;
+  white-space: nowrap;
+  margin-left: 50px;
+  
+  /* Add this line to remove the underline */
+  text-decoration: none; 
+}
+
+@media (max-width: 991px) {
+  .navigation {
+    justify-content: space-between; /* Adjust spacing on smaller screens */
+  }
+
+  .navItem {
+    white-space: normal; /* Allow text to wrap */
+    flex: 1 1 45%; /* Flexbox allows 2 items per row */
+    margin-left: 0; /* Remove left margin for consistency */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+}
+
+/* Media query for very small screens */
+@media (max-width: 600px) {
+  .navItem {
+    font-size: 14px; /* Slightly increase font size for better readability */
+    padding: 10px; /* Adjust padding for touch targets */
+  }
+}

@@ -1,0 +1,58 @@
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--sds-typography-body-font-family);
+}
+
+.contactButton {
+  border-radius: 10px;
+  background-color: rgba(20, 12, 115, 0.96);
+  color: #fff;
+  padding: 2% 3px;
+  border: none;
+  cursor: pointer;
+  font-size: 11px;
+  margin-right: 25px;
+}
+
+.phoneContainer {
+  display: flex;
+  margin-top: 5px;
+  margin-right: 26px;
+  margin-bottom: 5px;
+  gap: 10px;
+  color: #000;
+  align-items: center;
+}
+
+.phoneIcon {
+  aspect-ratio: 1.1;
+  object-fit: contain;
+  width: 15px;
+}
+
+.phoneNumber {
+  flex-grow: 1;
+  font-size: 10px;
+}
+
+@media (max-width: 991px) {
+  .contactButton {
+    width: 100%; /* Full-width buttons on smaller screens */
+    padding: 15px; /* Adjust padding for touch targets */
+    font-size: 16px; /* Increase font size for mobile */
+  }
+
+  .phoneContainer {
+    flex-direction: column; /* Stack phone icon and number vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .phoneIcon {
+    width: 18px; /* Slightly reduce icon size for mobile */
+  }
+
+  .phoneNumber {
+    font-size: 14px; /* Adjust font size for better readability */
+  }
+}

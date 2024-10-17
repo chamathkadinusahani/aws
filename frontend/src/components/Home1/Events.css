@@ -1,0 +1,59 @@
+/* Base Styles */
+.events-section {
+  padding: 0 5vw; /* Responsive padding using viewport width */
+}
+
+.events-section h2 {
+  color: rgba(22, 0, 65, 1);
+  margin-bottom: -4rem;
+  margin-top: -2rem;
+  font-size: 2rem; /* Use rem units for scalable font sizes */
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Adjust font size for larger screens */
+@media (min-width: 768px) {
+  .events-section h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem; /* Adjust gap size */
+  justify-items: center;
+  padding: 2rem 0;
+}
+
+.event-item {
+  position: relative;
+  width: 100%;
+  padding-top: 150%; /* Maintain aspect ratio for images */
+  overflow: hidden;
+}
+
+.event-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  transform: translate(-50%, -30%);
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 480px) {
+  .events-section h2 {
+    font-size: 1.8rem; /* Smaller font for mobile */
+    margin-top: -1.5rem;
+  }
+  
+  .events-grid {
+    gap: 1.5rem; /* Reduce grid gap for smaller screens */
+    padding: 1rem;
+  }
+}

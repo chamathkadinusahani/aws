@@ -1,0 +1,45 @@
+.header {
+  background-color: rgba(205, 193, 214, 0.8);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: -5px 58px 45px;
+  position: fixed; /* Fixes the header in place */
+  top: 0; /* Positions the header at the top */
+  left: 0;
+  z-index: 1000; /* Ensures the header stays above other elements */
+}
+
+.logoContainer {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.logo {
+  aspect-ratio: 1.02;
+  object-fit: contain;
+  width: 45px;
+  border-radius: 50%;
+}
+
+.schoolName {
+  color: #000;
+  font: 400 22px/1 Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  margin: 0;
+  font-family: var(--sds-typography-body-font-family);
+  font-weight: var(--sds-typography-body-font-weight-regular);
+  
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 1px 2px 2px;
+    width: 100%;
+  }
+}
+
+body {
+  margin-top: 43px; /* Adjust this to the height of your header to avoid content overlap */
+}

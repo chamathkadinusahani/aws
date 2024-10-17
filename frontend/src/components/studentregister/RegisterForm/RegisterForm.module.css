@@ -1,0 +1,85 @@
+.registerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.registerTitle {
+  color: rgba(0, 0, 0, 1);
+  align-self: center;
+  font: 500 40px/0.5 'Abhaya Libre Medium', -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.userTypeSelector {
+  display: flex;
+  margin-top: 34px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.1px;
+  font: 500 14px/20px Roboto, sans-serif;
+}
+
+.userTypeButton {
+  flex: 1;
+  min-height: 62px;
+  border: 1px solid rgba(121, 116, 126, 1);
+  background-color: rgba(232, 222, 248, 1);
+  color: #000;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.userTypeButton.start {
+  border-radius: 100px 0 0 100px;
+}
+
+.userTypeButton.end {
+  border-radius: 0 100px 100px 0;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  margin-top: 34px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputLabel {
+  color: var(--Ink-Normal, #252a31);
+  padding: 0 2px;
+  font: 800 32px/1 'Abhaya Libre ExtraBold', -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.inputField {
+  border-radius: 6px;
+  border: 1px solid var(--Cloud-Darker, #bac7d5);
+  background-color: var(--Cloud-Normal, #e8edf1);
+  padding: 12px;
+  margin-top: 4px;
+  min-height: 20px;
+  width: 150%;
+}
+
+.submitButton {
+  border-radius: 6px;
+  background-color: rgba(20, 12, 115, 1);
+  color: #fff;
+  padding: 15px 16px;
+  font: 700 32px/1 'Abhaya Libre', -apple-system, Roboto, Helvetica, sans-serif;
+  border: none;
+  cursor: pointer;
+  margin-top: 21px;
+  width: 150%;
+}
+
+@media (max-width: 991px) {
+  .userTypeSelector {
+    white-space: initial;
+  }
+}
