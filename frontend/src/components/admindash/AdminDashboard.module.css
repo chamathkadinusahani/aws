@@ -1,486 +1,366 @@
 .adminDashboard {
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    padding-bottom: 16px;
-  }
-  
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-bottom: 16px;
+  margin-bottom: 50px;
+}
+
+.header {
+  background-color: #cdc1d6;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 58px;
+  width: 100%;
+}
+
+.logoContainer {
+  align-items: center;
+  display: flex;
+  gap: 23px;
+}
+
+.logoCircle {
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  height: 85px;
+  width: 85px;
+}
+
+.schoolName {
+  color: #000;
+  font: 400 36px/36px Inter, sans-serif;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactButton {
+  background-color: rgba(20, 12, 115, 0.96);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  padding: 17px 38px;
+}
+
+.phoneContainer {
+  align-items: center;
+  display: flex;
+  gap: 17px;
+  margin-top: 12px;
+}
+
+.phoneIcon {
+  height: 33px;
+  width: 33px;
+}
+
+.phoneNumber {
+  color: #000;
+}
+
+.mainContent {
+  display: flex;
+  margin-top: 12px;
+}
+
+.sidebar {
+  background-color: #d4d2f6;
+  background-color: #6f69db;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 0 29px;
+  width: 22%;
+}
+
+.adminInfo {
+  padding: 0 17px;
+  text-align: center;
+}
+
+.adminPanel {
+  color: #000;
+  font: 700 20px Inter, sans-serif;
+  text-align: left;
+}
+
+.adminAvatar {
+  border-radius: 50%;
+  margin-top: 30px;
+  width: 166px;
+}
+
+.adminRole {
+  font: 700 20px Inter, sans-serif;
+  margin-top: 18px;
+}
+
+.dashboardLabel {
+  font-weight: 400;
+  margin-top: 33px;
+  text-align: left;
+}
+
+.sidebarNav {
+  margin-top: 42px;
+}
+
+.menuSection {
+  margin-top: 20px;
+}
+
+.sectionTitle {
+  color: #000;
+  font: 700 24px Inter, sans-serif;
+  text-align: center;
+}
+
+.menuList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menuItem {
+  align-items: center;
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.menuIcon {
+  height: 32px;
+  width: 32px;
+}
+
+.dashboardContent {
+  flex-grow: 1;
+  padding: 0 23px;
+}
+
+.dashboardTitle {
+  color: #16004;
+  font: 800 48px Inter, sans-serif;
+  text-align: center;
+}
+
+.welcomeMessage {
+  color: #000;
+  font: 500 20px Inter, sans-serif;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.dashboardCardsContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 56px;
+}
+
+.dashboardCard {
+  background-color: #cdc1d6;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  text-align: center;
+  width: 23%;
+}
+
+.cardIcon {
+  height: 55px;
+  width: 55px;
+}
+
+.cardTitle {
+  color: #000;
+  font: 500 20px Inter, sans-serif;
+  margin-top: 17px;
+}
+
+.cardCount {
+  color: #000;
+  font: 500 24px Inter, sans-serif;
+  margin-top: 10px;
+}
+
+.chartsContainer {
+  display: flex;
+  gap: 20px;
+  margin-top: 118px;
+}
+
+.studentActivation,
+.studentLogin {
+  background-color: #ebeaff;
+  border-radius: 20px;
+  padding: 30px;
+  width: 48%;
+}
+
+.chartTitle {
+  color: #000;
+  font: 800 24px 'Abhaya Libre ExtraBold', sans-serif;
+  text-align: center;
+}
+
+.chartContainer {
+  margin-top: 31px;
+  position: relative;
+}
+
+.chartBackground,
+.chartImage {
+  border-radius: 6px;
+  width: 100%;
+}
+
+.chartImage {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.chartLegend {
+  margin-top: 20px;
+}
+
+.legendTitle {
+  color: #675d5d;
+  font: 800 20px 'Abhaya Libre ExtraBold', sans-serif;
+  text-align: center;
+}
+
+.legendItem {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.legendDot {
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+}
+
+.legendText {
+  color: #000;
+  font: 800 18px 'Abhaya Libre ExtraBold', sans-serif;
+}
+
+.legendCount {
+  font-size: 24px;
+  margin-top: 5px;
+}
+
+.barChartContainer {
+  display: flex;
+  margin-top: 30px;
+}
+
+.yAxis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+.yAxis span {
+  color: #675d5d;
+  font: 800 15px 'Abhaya Libre ExtraBold', sans-serif;
+}
+
+.barChart {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.barColumn {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.bar {
+  background-color: #140c73;
+  border-radius: 5px 5px 0 0;
+  width: 8px;
+}
+
+.xAxisLabel {
+  color: #675d5d;
+  font: 800 15px 'Abhaya Libre ExtraBold', sans-serif;
+  margin-top: 10px;
+}
+
+.studentRegistration {
+  background-color: #ebeaff;
+  border-radius: 10px;
+  margin-top: 73px;
+  padding: 53px 28px;
+}
+
+.registrationChart {
+  margin-top: 56px;
+  width: 100%;
+}
+
+.chartDivider {
+  border: 1px solid #000;
+  margin: 12px 0;
+}
+
+.yearLabels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.yearLabel {
+  color: #000;
+  font: 400 12px Inter, sans-serif;
+}
+
+@media (max-width: 991px) {
   .header {
-    background-color: #cdc1d6;
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    padding: 12px 58px;
-    text-align: center;
-    width: 100%;
+    padding: 12px 20px;
   }
-  
-  @media (max-width: 991px) {
-    .header {
-      max-width: 100%;
-      padding: 0 20px;
-    }
-  }
-  
-  .schoolInfo {
-    align-self: start;
-    color: #000;
-    display: flex;
-    font: 400 36px/36px Inter, -apple-system, Roboto, Helvetica, sans-serif;
-    gap: 23px;
-  }
-  
-  .schoolLogo {
-    background-color: #d9d9d9;
-    border-radius: 50%;
-    height: 85px;
-    width: 85px;
-  }
-  
-  .schoolName {
-    margin: auto 0;
-  }
-  
-  .contactInfo {
-    display: flex;
-    flex-direction: column;
-    font: var(--sds-typography-body-font-weight-regular) var(--sds-typography-body-size-medium) / 1 var(--sds-typography-body-font-family);
-  }
-  
+
   .contactButton {
-    background-color: rgba(20, 12, 115, 0.96);
-    border-radius: 10px;
-    color: #fff;
-    padding: 17px 38px;
+    padding: 17px 20px;
   }
-  
-  @media (max-width: 991px) {
-    .contactButton {
-      margin-right: 7px;
-      padding: 0 20px;
-    }
-  }
-  
-  .phoneInfo {
-    color: #000;
-    display: flex;
-    gap: 17px;
-    margin-top: 12px;
-  }
-  
-  .phoneIcon {
-    aspect-ratio: 1.1;
-    object-fit: contain;
-    object-position: center;
-    width: 33px;
-  }
-  
-  .phoneNumber {
-    flex-grow: 1;
-    margin: auto 0;
-    width: 108px;
-  }
-  
-  .mainContent {
-    display: flex;
-    margin: 12px 0 0 11px;
-    max-width: 1371px;
-    width: 100%;
-  }
-  
-  @media (max-width: 991px) {
-    .mainContent {
-      max-width: 100%;
-    }
-  }
-  
+
   .sidebar {
-    background-color: #d4d2f6;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    padding: 18px 0 29px;
-    width: 22%;
-  }
-  
-  @media (max-width: 991px) {
-    .sidebar {
-      margin-top: 31px;
-      width: 100%;
-    }
-  }
-  
-  .sidebarHeader {
-    display: flex;
-    flex-direction: column;
-    padding: 0 54px 0 10px;
     width: 100%;
   }
-  
-  @media (max-width: 991px) {
-    .sidebarHeader {
-      padding-right: 20px;
-    }
-  }
-  
-  .adminPanelTitle {
-    color: #000;
-    font: 700 20px Inter, sans-serif;
-  }
-  
-  @media (max-width: 991px) {
-    .adminPanelTitle {
-      margin-left: 7px;
-    }
-  }
-  
-  .adminAvatar {
-    align-self: center;
-    aspect-ratio: 0.99;
-    border-radius: 50%;
-    margin-top: 30px;
-    max-width: 100%;
-    object-fit: contain;
-    object-position: center;
-    width: 166px;
-  }
-  
-  .adminInfo {
-    color: #000;
-    font: 700 20px Inter, sans-serif;
-    margin-top: 18px;
-    text-align: center;
-  }
-  
-  .dashboardLink {
-    color: #000;
-    font: 400 20px Inter, sans-serif;
-    margin: 33px 0 0 54px;
-    text-align: center;
-  }
-  
-  @media (max-width: 991px) {
-    .dashboardLink {
-      margin-left: 10px;
-    }
-  }
-  
-  .dataSection {
-    display: flex;
-    gap: 25px;
-    margin-top: 42px;
-  }
-  
-  @media (max-width: 991px) {
-    .dataSection {
-      margin: 40px 0 0 4px;
-    }
-  }
-  
-  .dataTitle {
-    color: #000;
-    font: 700 24px Inter, sans-serif;
-    text-align: center;
-  }
-  
-  .dataIcons {
-    display: flex;
-    flex-direction: column;
-    margin-top: 17px;
-    padding: 0 2px 0 10px;
-  }
-  
-  .dataIcon {
-    aspect-ratio: 0.9;
-    margin-top: 9px;
-    object-fit: contain;
-    object-position: center;
-    width: 36px;
-  }
-  
-  .dataIcon:first-child {
-    margin-top: 0;
-  }
-  
-  .dataList {
-    color: #000;
-    font: 400 20px Inter, sans-serif;
-    margin-top: 46px;
-  }
-  
-  @media (max-width: 991px) {
-    .dataList {
-      margin-top: 40px;
-    }
-  }
-  
-  .pagesSection {
-    color: #000;
-    font: 700 24px Inter, sans-serif;
-    margin-top: 36px;
-    text-align: center;
-  }
-  
-  .pagesList {
-    color: #000;
-    font: 400 20px Inter, sans-serif;
-    margin-top: 44px;
-  }
-  
-  @media (max-width: 991px) {
-    .pagesList {
-      margin-top: 40px;
-    }
-  }
-  
-  .tasksSection {
-    display: flex;
-    flex-direction: column;
-    margin-top: 46px;
-    padding: 0 8px;
-    width: 100%;
-  }
-  
-  @media (max-width: 991px) {
-    .tasksSection {
-      margin-top: 40px;
-    }
-  }
-  
-  .tasksTitle {
-    align-self: start;
-    color: #000;
-    font: 700 24px Inter, sans-serif;
-    text-align: center;
-  }
-  
-  .tasksList {
-    display: flex;
-    gap: 6px;
-    margin-top: 25px;
-  }
-  
-  .taskIcons {
-    align-self: start;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .taskIcon {
-    aspect-ratio: 1.23;
-    margin-top: 23px;
-    object-fit: contain;
-    object-position: center;
-    width: 27px;
-  }
-  
-  .taskIcon:first-child {
-    margin-top: 0;
-  }
-  
-  .taskItems {
-    color: #000;
-    flex-grow: 1;
-    font: 400 20px Inter, sans-serif;
-    width: 238px;
-  }
-  
-  .chartsSection {
-    align-self: start;
-    color: #000;
-    font: 700 24px Inter, sans-serif;
-    margin-top: 34px;
-    text-align: center;
-  }
-  
-  @media (max-width: 991px) {
-    .chartsSection {
-      margin-left: 3px;
-    }
-  }
-  
-  .chartsList {
-    color: #000;
-    font: 400 16px Inter, sans-serif;
-    margin: 25px 0 0 20px;
-  }
-  
-  .databasesSection {
-    color: #000;
-    display: flex;
-    flex-direction: column;
-    font: 400 20px Inter, sans-serif;
-    margin-top: 30px;
-    padding: 0 40px 0 10px;
-  }
-  
-  @media (max-width: 991px) {
-    .databasesSection {
-      padding-right: 20px;
-    }
-  }
-  
-  .databasesTitle {
-    align-self: start;
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-  }
-  
-  .databasesList {
-    margin-top: 40px;
-  }
-  
-  .mailsSection {
-    align-self: center;
-    margin-top: 65px;
-    text-align: center;
-  }
-  
-  @media (max-width: 991px) {
-    .mailsSection {
-      margin-top: 40px;
-    }
-  }
-  
+
   .dashboardContent {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-    width: 78%;
+    padding: 0 10px;
   }
-  
-  @media (max-width: 991px) {
-    .dashboardContent {
-      width: 100%;
-    }
-  }
-  
-  .dashboardHeader {
-    align-items: start;
-    display: flex;
-    flex-direction: column;
-    margin-top: 46px;
-    width: 100%;
-  }
-  
-  @media (max-width: 991px) {
-    .dashboardHeader {
-      margin-top: 40px;
-      max-width: 100%;
-    }
-  }
-  
+
   .dashboardTitle {
-    color: #16004;
-    font: 800 48px Inter, sans-serif;
-    text-align: center;
+    font-size: 40px;
   }
-  
-  @media (max-width: 991px) {
-    .dashboardTitle {
-      font-size: 40px;
-      margin-left: 2px;
-    }
+
+  .dashboardCardsContainer {
+    flex-wrap: wrap;
   }
-  
-  .welcomeMessage {
-    color: #000;
-    font: 500 20px Inter, sans-serif;
-    margin-top: 16px;
-    text-align: center;
+
+  .dashboardCard {
+    width: 48%;
   }
-  
-  .statsContainer {
-    align-self: stretch;
-    margin: 56px 0 0 23px;
-  }
-  
-  @media (max-width: 991px) {
-    .statsContainer {
-      margin-top: 40px;
-      max-width: 100%;
-    }
-  }
-  
-  .statsGrid {
-    display: flex;
-    gap: 20px;
-  }
-  
-  @media (max-width: 991px) {
-    .statsGrid {
-      align-items: stretch;
-      flex-direction: column;
-      gap: 0;
-    }
-  }
-  
-  .statCard {
-    background-color: #cdc1d6;
-    color: #000;
-    display: flex;
+
+  .chartsContainer {
     flex-direction: column;
-    font: 500 20px Inter, sans-serif;
-    margin: 0 auto;
-    padding: 25px 22px 25px 6px;
-    text-align: center;
-    width: 25%;
   }
-  
-  @media (max-width: 991px) {
-    .statCard {
-      margin-top: 40px;
-      padding-right: 20px;
-      width: 100%;
-    }
-  }
-  
-  .statContent {
-    align-items: start;
-    display: flex;
-    gap: 9px;
-  }
-  
-  .statIcon {
-    aspect-ratio: 1.04;
-    object-fit: contain;
-    object-position: center;
-    width: 55px;
-  }
-  
-  .statLabel {
-    margin-top: 17px;
-  }
-  
-  .statValue {
-    margin-top: 17px;
-  }
-  
-  .chartPlaceholder {
-    background-color: #d9d9d9;
-    height: 280px;
-    margin-top: 51px;
+
+  .studentActivation,
+  .studentLogin,
+  .studentRegistration {
     width: 100%;
   }
-  
-  @media (max-width: 991px) {
-    .chartPlaceholder {
-      margin-top: 40px;
-    }
-  }
-  
-  .smallChartPlaceholder {
-    background-color: #d9d9d9;
-    height: 377px;
-    margin-top: 18px;
-    max-width: 100%;
-    width: 407px;
-  }
-  
-  @media (max-width: 991px) {
-    .smallChartPlaceholder {
-      margin-left: 4px;
-    }
-  }
+}

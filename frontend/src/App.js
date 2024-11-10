@@ -22,7 +22,8 @@ import LoginPage5 from './components/sreg3/MainComponent/MainComponent';
 import LoginPage7 from './components/sreg2/MainComponent/MainComponent';
 import LoginPage6 from './components/sreg1/MainComponent/MainComponent';
 import AdminLogin1 from './components/admindash/AdminDashboard';
-import AdminDash88 from './components/AdminDash88/MyComponent1';
+import AdminDash88 from './components/admindash/AdminDashboard';
+import Contactus from './components/Contactus1/Body';
 
 
 
@@ -52,6 +53,7 @@ function App() {
           <Route path="/login5" element={<LoginPage5 />} />
           <Route path="/login6" element={<LoginPage6 />} />
           <Route path="/admin-dashboard" element={<AdminDash88/>} />
+          <Route path="/contact" element={<Contactus />} />
           </Routes>
         <ABCSchool />
       </ThemeProvider>

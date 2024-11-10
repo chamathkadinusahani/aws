@@ -1,22 +1,26 @@
 /* Add styling for the container */
 .formContainer {
   background-color: #f9f9f9; /* Set background color */
+  
   border: 1px solid #ccc; /* Add border */
   border-radius: 8px; /* Add rounded corners */
   padding: 20px; /* Add padding */
-  max-width: 400px; /* Set max width */
-  height: 490px;
+  max-width: 600px; /* Set max width */
+  height: 1190px;
   margin: 0 auto; /* Center the container */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
   margin-top: 12px;
-  margin-bottom: -1px;
+  margin-bottom: 90px;
 }
 
 .registrationForm {
   display: flex;
-  width: 200%; /* Adjust to fit the container */
+  background-color:linear-gradient(to right, #ad6868, #e0e0e0); /* Fallback solid color */
+  
+  width: 500%; /* Adjust to fit the container */
   flex-direction: column;
   margin-top: -40px;
+  height: 500px;
 }
 
 /* Other existing styles */

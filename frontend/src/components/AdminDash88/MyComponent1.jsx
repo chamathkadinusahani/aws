@@ -216,102 +216,13 @@ export default function MyComponent1() {
                 <div className={styles.welcomeToAdminPage}>
                   Welcome to Admin page
                 </div>
-                <div className={styles.div25}>
-                  <div className={styles.div26}>
-                    <div className={styles.column3}>
-                      <div className={styles.div27}>
-                        <div className={styles.div28}>
-                          <img
-                            loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/0e4214a0eee36add60a6e299aba4cacdb19d15bef4c3b39a6427cc515b09a462?apiKey=170b590e187e4beabe3f2ef7100234b5&"
-                            className={styles.img23}
-                          />
-                          <div className={styles.allRegisteredStudents}>
-                            All registered <br />
-                            students
-                          </div>
-                        </div>
-                        <div className={styles.div29}>
-                          <div className={styles.div30}>
-                            <div>250</div>
-                            <div className={ styles.b250 }>250</div>
-                          </div>
-                          <div className={styles.list2}>
-                            <img
-                              loading="lazy"
-                              src="https://cdn.builder.io/api/v1/image/assets/TEMP/213299635d90e23ae3c578f75a0ad72ae87205e1acff44d7b8c87da724f1330c?apiKey=170b590e187e4beabe3f2ef7100234b5&"
-                              className={styles.img24}
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={styles.column4}>
-                      <div className={styles.div31}>
-                        <div className={styles.div32}>
-                          <img
-                            loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/ba5c67d7672aa79e8c0c7a272b832d3e73ca6f6c9072739d54a1a1ad7b2733d7?apiKey=170b590e187e4beabe3f2ef7100234b5&"
-                            className={styles.img25}
-                          />
-                          <div className={styles.b150}>150</div>
-                        </div>
-                        <div className={styles.div33}>
-                          <div>New students</div>
-                          <img
-                            loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/213299635d90e23ae3c578f75a0ad72ae87205e1acff44d7b8c87da724f1330c?apiKey=170b590e187e4beabe3f2ef7100234b5&"
-                            className={styles.img26}
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className={styles.column5}>
-                      <div className={styles.div34}>
-                        <div className={styles.div35}>
-                          <img
-                            loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/ba5c67d7672aa79e8c0c7a272b832d3e73ca6f6c9072739d54a1a1ad7b2733d7?apiKey=170b590e187e4beabe3f2ef7100234b5&"
-                            className={styles.img27}
-                          />
-                          <div className={styles.allRegisteredTeachers}>
-                            All registered <br />
-                            teachers
-                          </div>
-                        </div>
-                        <div className={styles.div36}>
-                          <div className={styles.b50}>50</div>
-                          <div className={styles.list3}>
-                            <img
-                              loading="lazy"
-                              src="https://cdn.builder.io/api/v1/image/assets/TEMP/213299635d90e23ae3c578f75a0ad72ae87205e1acff44d7b8c87da724f1330c?apiKey=170b590e187e4beabe3f2ef7100234b5&"
-                              className={styles.img28}
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={styles.column6}>
-                      <div className={styles.div37}>
-                        <div className={styles.div38}>
-                          <div className={styles.creditCard}>
-                            <img
-                              loading="lazy"
-                              src="https://cdn.builder.io/api/v1/image/assets/TEMP/703f2cf6bee99562fab2b2fc8068eed51c627500d5fe65335f32d12cfb476d0e?apiKey=170b590e187e4beabe3f2ef7100234b5&"
-                              className={styles.img29}
-                            />
-                          </div>
-                          <div className={styles.payments}>Payments</div>
-                        </div>
-                        <img
-                          loading="lazy"
-                          src="https://cdn.builder.io/api/v1/image/assets/TEMP/213299635d90e23ae3c578f75a0ad72ae87205e1acff44d7b8c87da724f1330c?apiKey=170b590e187e4beabe3f2ef7100234b5&"
-                          className={styles.img30}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <div className={styles.statsContainer}>
+            <div className={styles.statsGrid}>
+              {stats.map((stat, index) => (
+                <StatCard key={index} {...stat} />
+              ))}
+            </div>
+          </div>
                 <div className={styles.div39}>
                   <div className={styles.div40}>
                     <div className={styles.column7}>
